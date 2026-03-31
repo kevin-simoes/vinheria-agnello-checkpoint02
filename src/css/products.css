@@ -1,0 +1,45 @@
+#product{
+    display: flex;
+    flex-direction: column;
+}
+#products{
+    display: flex;
+  gap: 20px;
+  width: 100%;
+  margin: 5% 5% 3% 16%;
+  max-width: 65%;
+}
+
+#products img{
+    max-width: 25%;
+}
+.vines{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#products h6{
+    margin-top: auto;
+}
+#product h4{
+    text-align: center;
+    margin-top: 5%;
+    font-size: x-large;
+    font-style: var(--fonte-titulo);
+    margin-bottom: 1%;
+    margin-right: 3%;
+}
+
+#type-vines{
+    display: flex;
+  gap: 20px;
+  width: 100%;
+  margin-top: 3%;
+}
+
+.picture-vines{
+}
+.description-vines{
+    background-color: gray;
+}
