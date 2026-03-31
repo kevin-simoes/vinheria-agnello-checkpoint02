@@ -1,32 +1,110 @@
 @import url("/src/css/local/variables.css");
 
-body {        /* altura da tela */
-  margin: 0;
-}
-h1,h6{
-    font-size: fonte-titulo;
-}
-main{
+#contact {
     display: flex;
     flex-direction: column;
     justify-content: center; /* centraliza horizontal */
     align-items: center;     /* centraliza vertical */
-    min-height: 100vh;       /* ocupa tela toda */
+    min-height: 100vh; 
+    margin-bottom: 2%;      /* ocupa tela toda */
 }
+#contact article h1{
+  margin-bottom: 5%;
+}
+#contact aside h6{
+  font-family:var(--fonte-titulo);
+  font-size: 115%;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+#contact aside p{
+  font-family:var(--fonte-texto);
+  font-size: smaller;
+  margin-left: 2%;
+}
+
+iframe{
+  margin-top: 2%;
+}
+#contact article p{
+  font-family:var(--fonte-texto);
+  font-size: smaller;
+  margin-left: 2%;
+  margin-bottom: 4%;
+}
+
+#contact article h6{
+  font-family:var(--fonte-titulo);
+  font-size: 115%;
+  margin-bottom: 2%;
+}
+#contact form{
+  max-width: 80%;
+  margin-left:2%;
+  width: 100%;
+  height: 60%;
+}
+#contact label{
+ padding-left: 1.5%;
+}
+#contact input{
+ margin-top: 0.5%;
+ height: 5%;
+ margin-bottom: 1%;
+}
+#contact textarea{
+ margin-top: 0.5%;
+ margin-bottom: 1%;
+}
+#contact fieldset{
+  max-width: 100%;
+  height: 100%;
+  padding: 5% 5% 5% 5%;
+  margin-bottom: 2%;
+}
+
+#contact button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: gold;
+}
+
+#contact button:hover {
+  background-color: #7a2a2b;
+}
+
+#contact input,textarea{
+  width: 100%;
+}
+
+p#table{
+  margin-bottom: 1%;
+}
+
+#mensagem{    /* evita centralização estranha */
+  height: 200px;
+  padding: 10px;
+  box-sizing: border-box;
+  vertical-align: top;
+  }
+
 #container {
   display: flex;
   gap: 20px;
   width: 100%;
   max-width: 65%;
 }
-article{
-  flex: 1;
+article {
+  flex: 2;
   justify-content: left; /* horizontal */
   align-items: left;
-  width: 1050px;
-  max-width: 200%;
+  width: 100%;
+  max-width: 600%;
   height: 700px;
-  padding: 20px;
+  padding: 10% 5% 0% 5%;
 }
 
 article h1{
@@ -40,14 +118,16 @@ aside{
   width: 250px;
   max-width: 550px;
   height: 700px;
-  padding-left: 20%;
-  padding-top: 10%; 
+  padding-left: 5%;
+  padding-top: 12%;
 }
 
 
-main img{
+#contact img{
+    padding-top: 2%;
+    padding-right: 6%;
     display: block;
     margin: 20px auto;
     width: 100%;
-    max-width: 65%;
+    max-width: 50%;
 }
