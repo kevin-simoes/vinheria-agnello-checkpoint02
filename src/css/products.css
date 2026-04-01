@@ -8,7 +8,7 @@
     display: flex;
   gap: 20px;
   width: 100%;
-  margin: 5% 5% 3% 21%;
+  margin: 5% 5% 3% 18%;
   max-width: 70%;
   max-height: 100%;
 }
@@ -38,6 +38,7 @@
 
 #type-vines{
 padding: 0% 0% 0% 0%;
+width: 100%;
 max-width: 100%;
   overflow: visible;
 }
@@ -49,6 +50,8 @@ max-width: 100%;
 }
 .picture-vines-left,.picture-vines-right{
     flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 .reverse {
@@ -84,9 +87,41 @@ max-width: 22.5%;
     color:#E0E0E0;
     line-height: 1.6;
 }
+h6#Wines{
+    margin-top: 2%;
+}
 
+h6#WinesS{
+    margin-top: 0%;
+}
+img#Wines{
+    margin-bottom: 0%;
+}
 
 #product-footer{
-    display: flex;
-    margin-top: 80vw;
+    position: relative;
+    margin-top: 5%;
+}
+
+#Model{
+    max-width: 40%;
+    background-color: #1c1d21;
+    margin-top: 50px;
+    padding: 5% 5% 5% 5%;
+    margin-left: 25%;
+}
+
+#Model table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#Model h2{
+    color: #D4AF37;
+}
+
+#Model td, tr {
+    padding: 5px;
+    border: 1px solid #E0E0E0;
+    color: #E0E0E0;
 }
