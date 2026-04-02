@@ -125,3 +125,265 @@ img#Wines{
     border: 1px solid #E0E0E0;
     color: #E0E0E0;
 }
+
+@media (min-width:700px) and (max-width: 1024px) {
+    #product{
+    display: flex;
+    flex-direction: column;
+    margin: 0% 0% 0% 0%;
+    max-width: 100%;
+}
+#products{
+    display: flex;
+  gap: 20px;
+  width: 100%;
+  margin: 5% 5% 3% 15%;
+  max-width: 70%;
+  max-height: 100%;
+}
+
+#products img{
+    max-width: 60%;
+    margin-bottom: 2%;
+}
+.vines{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#products h6{
+    margin-top: auto;
+    margin-bottom: 21%;
+}
+#product h4{
+    text-align: center;
+    margin-top: 5%;
+    font-size: x-large;
+    font-style: var(--fonte-titulo);
+    margin-bottom: 1%;
+    margin-right: 3%;
+}
+
+#type-vines{
+padding: 0% 0% 0% 0%;
+width: 100%;
+max-width: 100%;
+  overflow: visible;
+}
+.row{
+    display: flex;
+     margin-top: 2%;
+    align-items: center;
+    gap: 20px;
+}
+.picture-vines-left,.picture-vines-right{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.reverse {
+  margin-top: 2%;
+  flex-direction: row-reverse;
+}
+
+.picture-vines-left img, .picture-vines-right img{
+    padding-left: 20%;
+max-width: 60.5%;
+  display: block;
+}
+.description-vines-right{
+    flex: 2;
+    margin-right: 0%;
+    padding: 0% 13% 5% 0%;
+    background-color: #1c1d21;
+    margin-left:auto;
+}
+.one-picture{
+    margin-top: 9%;
+    margin-left: 20%;
+    margin-bottom: 5%;
+    max-width: 70%;
+}
+
+.one-picture h2{
+    color: #D4AF37;
+    margin-bottom: 3%;
+}
+
+.one-picture p{
+    color:#E0E0E0;
+    line-height: 1.6;
+}
+h6#Wines{
+    margin-top: 2%;
+}
+
+h6#WinesS{
+    margin-top: 0%;
+}
+img#Wines{
+    margin-bottom: 0%;
+}
+
+#product-footer{
+    position: relative;
+    margin-top: 5%;
+}
+
+#Model{
+    max-width: 50%;
+    background-color: #1c1d21;
+    margin-top: 50px;
+    padding: 5% 5% 5% 5%;
+    margin-left: 20%;
+}
+
+#Model table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#Model h2{
+    color: #D4AF37;
+}
+
+#Model td, tr {
+    padding: 5px;
+    border: 1px solid #E0E0E0;
+    color: #E0E0E0;
+}
+}
+
+@media (max-width: 700px) {
+    #product{
+    display: flex;
+    flex-direction: column;
+    margin: 0% 0% 0% 0%;
+    max-width: 100%;
+}
+#products{
+    display: flex;
+  gap: 20px;
+  width: 100%;
+  margin: 5% 5% 3% 10%;
+  max-width: 86%;
+  max-height: 100%;
+}
+
+#products img{
+    max-width: 60%;
+    margin-bottom: 2%;
+}
+.vines{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#products h6{
+    margin-top: auto;
+    margin-bottom: 21%;
+}
+#product h4{
+    text-align: center;
+    margin-top: 5%;
+    font-size: x-large;
+    font-style: var(--fonte-titulo);
+    margin-bottom: 1%;
+    margin-right: 3%;
+}
+
+#type-vines{
+padding: 0% 0% 0% 0%;
+width: 100%;
+max-width: 100%;
+  overflow: visible;
+}
+.row{
+    display: flex;
+     margin-top: 2%;
+    align-items: center;
+    gap: 20px;
+}
+.picture-vines-left,.picture-vines-right{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.reverse {
+  margin-top: 2%;
+  flex-direction: row-reverse;
+}
+
+.picture-vines-left img, .picture-vines-right img{
+    padding-left: 20%;
+max-width: 100%;
+  display: block;
+}
+.description-vines-right{
+    flex: 2;
+    margin-right: 0%;
+    padding: 0% 2% 5% 0%;
+    background-color: #1c1d21;
+    margin-left:auto;
+}
+
+.one-picture{
+    margin-top: 9%;
+    margin-left: 15%;
+    margin-bottom: 5%;
+    max-width: 100%;
+}
+
+.one-picture h2{
+    color: #D4AF37;
+    margin-bottom: 3%;
+}
+
+.one-picture p{
+    color:#E0E0E0;
+    line-height: 1.6;
+}
+h6#Wines{
+    margin-top: 2%;
+}
+
+h6#WinesS{
+    margin-top: 0%;
+}
+img#Wines{
+    margin-bottom: 0%;
+}
+
+#product-footer{
+    position: relative;
+    margin-top: 5%;
+}
+
+#Model{
+    max-width: 100%;
+    background-color: #1c1d21;
+    margin-top: 50px;
+    margin-left: 0%;
+    padding: 5% 0% 5% 0%;
+}
+
+#Model table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+#Model h2{
+    color: #D4AF37;
+}
+
+#Model td, tr {
+    padding: 5px;
+    border: 1px solid #E0E0E0;
+    color: #E0E0E0;
+}
+}
