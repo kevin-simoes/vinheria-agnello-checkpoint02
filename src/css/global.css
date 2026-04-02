@@ -1,0 +1,9 @@
+@import url("./local/main.css");
+@import url("./local/variables.css");
+@import url("./local/style.css");
+@import url("./local/team.css");
+@import url("./local/contact.css");
+@import url("./local/products.css");
+
+@import url("./local/sections/header.css");
+@import url("./local/sections/footer.css");

@@ -1,0 +1,63 @@
+.team-hero {
+    padding: 2rem;
+    color: var(--color-secondary);
+    background-image: url('../../assets/imgs/team.avif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.team-hero hr {
+    border: none;
+    height: 2px;
+    background-color: var(--color-tertiary);
+    width: 10%;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    padding: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-transparent);
+    padding: 1rem;
+    border-radius: 1rem;
+    max-inline-size: 20rem;
+    max-width: 300px;
+    text-align: center;
+    gap: 1rem;
+}
+
+.card-container img {
+    height: 20rem;
+    object-fit: cover;
+}
+
+.card-container span {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.card-container a {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    border: none;
+    padding: 0.8rem 1rem;
+    border-radius: 3px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+}

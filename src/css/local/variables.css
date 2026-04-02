@@ -1,0 +1,9 @@
+:root {
+    --color-primary: #1C1D21;
+    --color-secondary: #F7F4EF;
+    --color-tertiary: #F85036;
+    --color-transparent: #ffffffc1;
+
+    --fonte-titulo: 'Cinzel', serif;
+    --fonte-texto: 'Montserrat', sans-serif;
+}
