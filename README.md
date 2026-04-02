@@ -92,7 +92,7 @@ Nessa tela é onde o cliente conhece a equipe de programadores do site, com os l
 Nessa tela é onde o cliente acessa o formulário da vinharia, com informações da vinharia como telefone, email, endereço, entre outras informações. Além disso tem um formulário com inputs a serem preenchidos e um textarea pra mensagem que o cliente quer fazer com a vinharia.
 
 ## Link do site
-Veja o projeto funcionando aqui: [link]
+Veja o projeto funcionando aqui: [[link](https://luansmf.github.io/CP1-FrontEnd-VinhariaAgnelo/)]
 
 ## Equipe de programadores
 ### João Pedro Nóbrega 
