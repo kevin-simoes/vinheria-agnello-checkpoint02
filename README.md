@@ -40,12 +40,13 @@ Segue abaixo a estrutura do projeto:
 │   │   │   └── variables.css
 │   │   └── global.css
 │   ├── js/
-│   │   └── contact.js
+│   │   └── script.js
 │   ├── pages/
 │   │   ├── contact.html
 │   │   ├── history.html
 │   │   ├── products.html
 │   │   └── team.html
+│   │   └── register.html
 │   └── index.html
 ├── LICENSE
 └── README.md
@@ -55,7 +56,8 @@ Para estilizar o site, nós usamos os estilos globais dentro de variables.css e 
 
 #### Variáveis Globais (Cores e Fontes)
 
-css
+
+```css
 :root {
     --color-primary: #1C1D21;
     --color-secondary: #F7F4EF;
@@ -65,6 +67,9 @@ css
     --fonte-titulo: 'Cinzel', serif;
     --fonte-texto: 'Montserrat', sans-serif;
 }
+
+```
+
 
 Com isso, qualquer página do projeto já vem com o estilo pré-definido, para situações mais específicas como definições de main, div, span, etc. Nós usamos os arquivos dentro da pasta local.
 
@@ -92,18 +97,18 @@ Nessa tela é onde o cliente conhece a equipe de programadores do site, com os l
 Nessa tela é onde o cliente acessa o formulário da vinharia, com informações da vinharia como telefone, email, endereço, entre outras informações. Além disso tem um formulário com inputs a serem preenchidos e um textarea pra mensagem que o cliente quer fazer com a vinharia.
 
 ## Link do site
-Veja o projeto funcionando aqui: [[link](https://luansmf.github.io/CP1-FrontEnd-VinhariaAgnelo/)]
+Veja o projeto funcionando aqui: [Vinharia Agnello](https://luansmf.github.io/CP1-FrontEnd-VinhariaAgnelo/)
 
 ## Equipe de programadores
-### João Pedro Nóbrega 
-[Git Hub](https://github.com/nobrejohnn)
+### João Pedro Nóbrega Pereira
+[Git Hub](https://github.com/nobrejohnn)<br>
 [Linkedin](https://www.linkedin.com/in/jo%C3%A3o-pedro-n%C3%B3brega-8aba55293/)
-### Kevin Simões
-[Git Hub](https://github.com/kevin-simoes)
+### Kevin Simões de Souza Lima
+[Git Hub](https://github.com/kevin-simoes)<br>
 [Linkedin](https://www.linkedin.com/in/kevin-sim%C3%B5es-362750350/)
-### Luan Sá
-[Git Hub](https://github.com/LuanSMF)
+### Luan Sá Muniz dos Santos de Freitas
+[Git Hub](https://github.com/LuanSMF)<br>
 [Linkedin](https://www.linkedin.com/in/luans%C3%A1muniz/)
 
-### Autor do Texto
-## Kevin Simões
+#### Autor do Texto
+#### Kevin Simões
