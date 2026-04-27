@@ -31,48 +31,6 @@
     color: var(--color-transparent);
 }
 
-.hero-button-primary {
-    background-color: var(--color-tertiary);
-    color: var(--color-secondary);
-    border: none;
-    padding: 0.9rem 2rem;
-    border-radius: 3px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.1s ease;
-}
-
-.hero-button-primary:hover {
-    background-color: transparent;
-    color: var(--color-secondary);
-    
-    border: 2px solid var(--color-tertiary);
-    padding: 0.8rem 1.9rem;
-    cursor: pointer;
-}
-
-.hero-button-secondary {
-    background-color: transparent;
-    color: var(--color-secondary);
-    border: 2px solid var(--color-transparent);
-    border-radius: 3px;
-    padding: 0.9rem 2rem;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.1s ease, color 0.1s ease;
-}
-
-.hero-button-secondary:hover {
-    background-color: var(--color-transparent);
-    color: var(--color-primary);
-    border: none;
-    padding: 1rem 2.1rem;
-    border-radius: 3px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.1s ease;
-}
-
 /*BESTSELLERS*/
 
 .bestsellers {
@@ -117,9 +75,13 @@
     text-align: center;
     width: 10rem;
 }
+.product-card h4 {
+    transition: color 0.3s ease;
+}
 
 .product-card img {
     height: 300px;
+    transition: transform 0.3s ease;
 }
 
 /*EXPERIENCES*/
@@ -170,8 +132,8 @@
 
 .experience-topic img {
     height: 250px;
-
     width: fit-content;
+    transition: transform 0.3s ease;
 }
 
 .experience-topic hr {

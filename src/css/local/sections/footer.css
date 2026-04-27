@@ -45,6 +45,10 @@ footer hr {
     max-width: 10rem;
 }
 
+.footer-list a {
+    transition: color 0.1s ease;
+}
+
 footer span {
     display: flex;
     justify-content: space-between;

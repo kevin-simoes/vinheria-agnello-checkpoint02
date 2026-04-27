@@ -1,0 +1,77 @@
+/*USO DO :focus*/
+header a:focus {
+    color: var(--color-tertiary);
+}
+
+footer a:focus {
+    color: var(--color-tertiary);
+}
+
+/*USO DO :hover*/
+.product-card h4:hover {
+    color: var(--color-tertiary);
+}
+
+.footer-list a:hover {
+    color: var(--color-tertiary);
+}
+
+.card-container span a:hover {
+    background-color: rgb(72, 72, 72);
+    /*USO DO scale()*/transform: scale(1.1);
+}
+
+.product-card img:hover {
+    transform: scale(1.1);
+}
+
+.secao img:hover {
+    transform: scale(1.1);
+}
+
+.experience-topic img:hover {
+    transform: translate(0px, -20px);
+}
+
+/*USO DO :nth-child() & :hover*/
+.hero-buttons a:nth-child(1) button {
+    background-color: var(--color-tertiary);
+    color: var(--color-secondary);
+    border: none;
+    padding: 0.9rem 2rem;
+    border-radius: 3px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+}
+
+.hero-buttons a:nth-child(1) button:hover {
+    background-color: transparent;
+    color: var(--color-secondary);
+    border: 2px solid var(--color-tertiary);
+    padding: 0.8rem 1.9rem;
+    cursor: pointer;
+}
+
+.hero-buttons a:nth-child(2) button {
+    background-color: transparent;
+    color: var(--color-secondary);
+    border: 2px solid var(--color-transparent);
+    border-radius: 3px;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.1s ease, color 0.1s ease;
+}
+.hero-buttons a:nth-child(2) button:hover {
+    background-color: var(--color-transparent);
+    color: var(--color-primary);
+    border: none;
+    padding: 0.9rem 2.1rem;
+    border-radius: 3px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+}
+
+
