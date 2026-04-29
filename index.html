@@ -212,6 +212,29 @@
             </a>
         </span>
     </footer>
+    <script>
+const imagens = document.querySelectorAll('.products img, .vines img');
+
+function verificarImagens() {
+  imagens.forEach(img => {
+    const posicao = img.getBoundingClientRect().top;
+    const tela = window.innerHeight;
+
+    if (posicao < tela - 100) {
+      img.classList.add('aparecer');
+    }
+  });
+}
+
+// roda ao carregar
+verificarImagens();
+
+// roda ao scrollar
+window.addEventListener('scroll', verificarImagens);
+</script>
+
+</body>
+</html>
 </body>
 
 </html>

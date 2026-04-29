@@ -74,4 +74,66 @@ footer a:focus {
     transition: background-color 0.1s ease;
 }
 
+/*Uso de keyframes*/
+.products img {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.products img.aparecer {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.vines img {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.vines img.aparecer {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.vines img {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.vines img.aparecer {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 
