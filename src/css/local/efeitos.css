@@ -1,0 +1,229 @@
+/*USO DO :focus*/
+header a:focus {
+    color: var(--color-tertiary);
+}
+
+footer a:focus {
+    color: var(--color-tertiary);
+}
+
+/*USO DO :hover*/
+.product-card h4:hover {
+    color: var(--color-tertiary);
+}
+
+.footer-list a:hover {
+    color: var(--color-tertiary);
+}
+
+.card-container span a:hover {
+    background-color: rgb(72, 72, 72);
+    /*USO DO scale()*/transform: scale(1.1);
+}
+
+.product-card img:hover {
+    transform: scale(1.1);
+}
+
+.secao img:hover {
+    transform: scale(1.1);
+}
+
+.experience-topic img:hover {
+    transform: translate(0px, -20px);
+}
+
+/*USO DO :nth-child() & :hover*/
+.hero-buttons a:nth-child(1) button {
+    background-color: var(--color-tertiary);
+    color: var(--color-secondary);
+    border: none;
+    padding: 0.9rem 2rem;
+    border-radius: 3px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+}
+
+.hero-buttons a:nth-child(1) button:hover {
+    background-color: transparent;
+    color: var(--color-secondary);
+    border: 2px solid var(--color-tertiary);
+    padding: 0.8rem 1.9rem;
+    cursor: pointer;
+}
+
+.hero-buttons a:nth-child(2) button {
+    background-color: transparent;
+    color: var(--color-secondary);
+    border: 2px solid var(--color-transparent);
+    border-radius: 3px;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.1s ease, color 0.1s ease;
+}
+.hero-buttons a:nth-child(2) button:hover {
+    background-color: var(--color-transparent);
+    color: var(--color-primary);
+    border: none;
+    padding: 0.9rem 2.1rem;
+    border-radius: 3px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+}
+
+/*Uso de keyframes*/
+.products img {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.products img.aparecer {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.vines img {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.vines img.aparecer {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.vines img {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.vines img.aparecer {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.origem1 p {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.origem1.aparecer p{
+    animation: fadeUp 1s ease-out forwards;
+}
+
+.origem1.aparecer p:nth-child(1) { animation-delay: 0.2s; }
+.origem1.aparecer p:nth-child(2) { animation-delay: 0.4s; }
+.origem1.aparecer p:nth-child(3) { animation-delay: 0.6s; }
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.origem2 p {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.origem2.aparecer p{
+    animation: fadeUp 2s ease-out forwards;
+}
+
+.origem2.aparecer p:nth-child(1) { animation-delay: 0.2s; }
+.origem2.aparecer p:nth-child(2) { animation-delay: 0.4s; }
+.origem2.aparecer p:nth-child(3) { animation-delay: 0.6s; }
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.origem3 p {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.origem3.aparecer p{
+    animation: fadeUp 3s ease-out forwards;
+}
+
+.origem3.aparecer p:nth-child(1) { animation-delay: 0.2s; }
+.origem3.aparecer p:nth-child(2) { animation-delay: 0.4s; }
+.origem3.aparecer p:nth-child(3) { animation-delay: 0.6s; }
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1#fala::before {
+    content: ""; 
+    display: inline-block;
+    width: 24px;
+    margin-left: 2%;
+    margin-right: 1%;
+    height: 24px;
+
+    background-image: url("../../assets/imgs/fale.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.listar::selection{
+    background: #8B0000;
+    color: #fff;
+}
+
+
+
