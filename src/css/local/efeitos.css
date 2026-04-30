@@ -135,6 +135,78 @@ footer a:focus {
   }
 }
 
+.origem1 p {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.origem1.aparecer p{
+    animation: fadeUp 1s ease-out forwards;
+}
+
+.origem1.aparecer p:nth-child(1) { animation-delay: 0.2s; }
+.origem1.aparecer p:nth-child(2) { animation-delay: 0.4s; }
+.origem1.aparecer p:nth-child(3) { animation-delay: 0.6s; }
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.origem2 p {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.origem2.aparecer p{
+    animation: fadeUp 2s ease-out forwards;
+}
+
+.origem2.aparecer p:nth-child(1) { animation-delay: 0.2s; }
+.origem2.aparecer p:nth-child(2) { animation-delay: 0.4s; }
+.origem2.aparecer p:nth-child(3) { animation-delay: 0.6s; }
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.origem3 p {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.origem3.aparecer p{
+    animation: fadeUp 3s ease-out forwards;
+}
+
+.origem3.aparecer p:nth-child(1) { animation-delay: 0.2s; }
+.origem3.aparecer p:nth-child(2) { animation-delay: 0.4s; }
+.origem3.aparecer p:nth-child(3) { animation-delay: 0.6s; }
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 h1#fala::before {
     content: ""; 
     display: inline-block;
