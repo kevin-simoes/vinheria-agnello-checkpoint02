@@ -1,7 +1,5 @@
 # CP1-FrontEnd-VinhariaAgnelo
-
 Esse projeto se trata sobre  um trabalho onde temos que fazer um site para uma vinharia contendo os elementos aprendidos em sala de aula, segue abaixo os requisitos obrigatórios para o projeto:
-
 
 - 5 Arquivos HTML criados (index.html, products.html, history.html, team.html e contact.html);
 - index.html com navegação para as demais páginas;
@@ -15,17 +13,11 @@ Esse projeto se trata sobre  um trabalho onde temos que fazer um site para uma v
 - Imagens em todas as páginas;
 - Vídeo inserido;
 - Menu de navegação funcional;
-- Sistema funcional de cadastro e análise de vinhos;
-=======
 - Links internos e externos funcionando;
 - Cada integrante com pelo menos 2 commits;
 - Projeto publicado no GitHub Pages;
 
 ## Sobre o projeto (Parte técnica)
-
-Um site feito para catalogar os vinhos da Vinharia Agnello, com páginas diretas para o que o usuário busca, como produtos, história da vinharia, equipe, contato e um sistema básico para registrar vinhos da Vinharia Agnello
-=======
-
 
 ### Estrutura
 Segue abaixo a estrutura do projeto:
@@ -46,18 +38,16 @@ Segue abaixo a estrutura do projeto:
 │   │   │   ├── style.css
 │   │   │   ├── team.css
 │   │   │   └── variables.css
+│   │   │   └── efeitos.css
 │   │   └── global.css
 │   ├── js/
-│   │   └── script.js
-=======
 │   │   └── contact.js
+│   │   └── register.js
 │   ├── pages/
 │   │   ├── contact.html
 │   │   ├── history.html
 │   │   ├── products.html
 │   │   └── team.html
-│   │   └── register.html
-=======
 │   └── index.html
 ├── LICENSE
 └── README.md
@@ -66,8 +56,6 @@ Segue abaixo a estrutura do projeto:
 Para estilizar o site, nós usamos os estilos globais dentro de variables.css e aplicamos no main.css, veja abaixo as variáveis usadas para o projeto:
 
 #### Variáveis Globais (Cores e Fontes)
-
-
 
 ```css
 =======
@@ -83,9 +71,6 @@ css
 }
 
 ```
-
-
-=======
 
 Com isso, qualquer página do projeto já vem com o estilo pré-definido, para situações mais específicas como definições de main, div, span, etc. Nós usamos os arquivos dentro da pasta local.
 
@@ -112,12 +97,32 @@ Nessa tela é onde o cliente conhece a equipe de programadores do site, com os l
 #### contact.html
 Nessa tela é onde o cliente acessa o formulário da vinharia, com informações da vinharia como telefone, email, endereço, entre outras informações. Além disso tem um formulário com inputs a serem preenchidos e um textarea pra mensagem que o cliente quer fazer com a vinharia.
 
-
 #### register.html
 Nessa tela é onde o cliente consegue registrar um vinho preenchendo informações como nome do vinho, tipo, safra e quantidade de estoque. Todas essas informações são registradas no console.log da página, e o usuário é notificado sobre o registro através de um alert.
 
+### Efeitos CSS
+
+#### efeito.css
+É o arquivo que contém todas as estilizações para o CP2 de Front-End, sendo importada no global.css, visto que o style.css é usado apenas para a estilização do index.html, além de que o global.css já faz essa função de importar os estilos CSS em um só arquivo.
+
+#### Pseudo-classes utilizadas:
+:focus(usado para o header e footer de todas as telas)
+:hover(usado para a grande maioria dos links/botões do site)
+:nth-child(usado para os dois botões do hero do index.html, além deles usarem hover também)
+#### Pseudo-elementos utilizados:
+::selection(usado para o formulário)
+::before(usado para o formulário)
+#### @keyframes utilizados:
+FadeInUp(Usado para as imagens dos vinhos, além dos textos do history.html)
+
+#### uso de flexbox:
+Usado nas seguintes telas:
+index.html
+team.html
+contact.html
+
 ## Link do site
-Veja o projeto funcionando aqui: [Vinharia Agnello](https://luansmf.github.io/CP1-FrontEnd-VinhariaAgnelo/)
+Veja o projeto funcionando aqui: [[link](https://luansmf.github.io/CP1-FrontEnd-VinhariaAgnelo/)]
 
 ## Equipe de programadores
 ### João Pedro Nóbrega Pereira
@@ -130,23 +135,5 @@ Veja o projeto funcionando aqui: [Vinharia Agnello](https://luansmf.github.io/CP
 [Git Hub](https://github.com/LuanSMF)<br>
 [Linkedin](https://www.linkedin.com/in/luans%C3%A1muniz/)
 
-#### Autor do Texto
-#### Kevin Simões
-=======
-## Link do site
-Veja o projeto funcionando aqui: [[link](https://luansmf.github.io/CP1-FrontEnd-VinhariaAgnelo/)]
-
-## Equipe de programadores
-### João Pedro Nóbrega 
-[Git Hub](https://github.com/nobrejohnn)
-[Linkedin](https://www.linkedin.com/in/jo%C3%A3o-pedro-n%C3%B3brega-8aba55293/)
-### Kevin Simões
-[Git Hub](https://github.com/kevin-simoes)
-[Linkedin](https://www.linkedin.com/in/kevin-sim%C3%B5es-362750350/)
-### Luan Sá
-[Git Hub](https://github.com/LuanSMF)
-[Linkedin](https://www.linkedin.com/in/luans%C3%A1muniz/)
-
 ### Autor do Texto
 ## Kevin Simões
-
