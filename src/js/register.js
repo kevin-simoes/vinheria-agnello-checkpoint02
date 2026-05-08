@@ -2,18 +2,55 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const botao = document.getElementById("btnCadastro");
 
-  botao.addEventListener("click", () => {
+  function perguntar(mensagem) {
 
-    function perguntar(mensagem) {
-      const resposta = prompt(mensagem);
+    const resposta = prompt(mensagem);
 
-      if (resposta === null) {
-        alert("Cadastro cancelado.");
+    if (resposta === null) {
+      alert("Cadastro cancelado.");
+      return null;
+    }
+
+    return resposta;
+  }
+
+  function verificarEstoque(quantidade) {
+
+    if (quantidade < 5) {
+      alert("Estoque baixo!");
+      console.log("Estoque baixo! Quantidade em estoque:", quantidade);
+    } else {
+      alert("Estoque suficiente.");
+      console.log("Estoque suficiente. Quantidade em estoque:", quantidade);
+    }
+
+  }
+
+  function perguntarQuantidade() {
+
+    let quantidade;
+
+    while (true) {
+
+      quantidade = perguntar("Digite a quantidade em estoque:");
+
+      if (quantidade === null) {
         return null;
       }
 
-      return resposta;
+      quantidade = Number(quantidade);
+
+      if (!isNaN(quantidade)) {
+        return quantidade;
+      }
+
+      alert("Digite apenas números!");
+
     }
+
+  }
+
+  botao.addEventListener("click", () => {
 
     let continuar = true;
 
@@ -28,14 +65,15 @@ document.addEventListener("DOMContentLoaded", () => {
       const ano = perguntar("Digite o ano da safra:");
       if (ano === null) return;
 
-      const quantidade = perguntar("Digite a quantidade em estoque:");
+      const quantidade = perguntarQuantidade();
       if (quantidade === null) return;
 
-      console.log("LISTA DE VINHOS: ");
+      verificarEstoque(quantidade);
+
       console.log("Nome:", nome);
       console.log("Tipo:", tipo);
       console.log("Ano:", ano);
-      console.log("Quantidade:", quantidade);
+    
 
       continuar = confirm("Deseja cadastrar outro vinho?");
     }
