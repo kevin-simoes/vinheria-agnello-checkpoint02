@@ -1,139 +1,83 @@
-# CP1-FrontEnd-VinhariaAgnelo
+<div align="center">
+    <h1>
+        🍷<br>
+        Checkpoint 02 de Web Development
+    </h1>
+</div>
+<div align="center">
+    <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+    <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+    <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+</div><br>
+
 Esse projeto se trata sobre  um trabalho onde temos que fazer um site para uma vinharia contendo os elementos aprendidos em sala de aula, segue abaixo os requisitos obrigatórios para o projeto:
 
-- 5 Arquivos HTML criados (index.html, products.html, history.html, team.html e contact.html);
-- index.html com navegação para as demais páginas;
-- Heading tags e parágrafos aplicados;
-- Lista ul/ol usada em pelo menos uma das páginas (history.html);
-- Tabela HTML com conteúdo relevante (products.html);
-- Formulário com input, textarea e botão (contact.html);
-- Tags semânticas aplicadas corretamente;
-- Meta tags (keywords, description) em cada página;
-- Estilos com CSS usando classes e ids;
-- Imagens em todas as páginas;
-- Vídeo inserido;
-- Menu de navegação funcional;
-- Links internos e externos funcionando;
-- Cada integrante com pelo menos 2 commits;
-- Projeto publicado no GitHub Pages;
+<details>
+  <summary style="font-size: 1.5em; font-weight: 600;">
+    Requisitos
+  </summary>
 
-## Sobre o projeto (Parte técnica)
+  <ul>
+    <li>
+      Reaproveite a ideia de cadastro de vinhos.
+    </li>
+    <li>
+      Permita o cadastro de vários vinhos em sequência, perguntando ao final se deseja cadastrar outro.
+    </li>
+    <li>
+      Crie funções reutilizáveis:
+      <ul>
+        <li>Para validar entradas</li>
+        <li>Para verificar se o estoque está baixo (menos de 5)</li>
+        <li>Para classificar o vinho (jovem, amadurecido, antigo)</li>
+        <li>Para mostrar os dados no console com aviso por <code>alert()</code></li>
+      </ul>
+    </li>
+    <li>
+      Evite repetir código: funções são obrigatórias.
+    </li>
+    <li>
+      Escopo deve ser respeitado:
+      <ul>
+        <li>Variáveis declaradas dentro das funções devem ser usadas localmente</li>
+      </ul>
+    </li>
+    <li>
+      Ao final, exiba:
+      <ul>
+        <li>Quantos cadastros foram feitos</li>
+        <li>Quantos vinhos têm estoque baixo</li>
+        <li>O vinho com a safra mais antiga (comparando manualmente dentro das iterações)</li>
+      </ul>
+    </li>
+  </ul>
+</details>
 
-### Estrutura
-Segue abaixo a estrutura do projeto:
+## Implementações do CP 02
 
-```bash
-.
-├── src/
-│   ├── assets/
-│   │   └── imgs/
-│   ├── css/
-│   │   ├── local/
-│   │   │   ├── sections/
-│   │   │   │   ├── footer.css
-│   │   │   │   └── header.css
-│   │   │   ├── contact.css
-│   │   │   ├── main.css
-│   │   │   ├── products.css
-│   │   │   ├── style.css
-│   │   │   ├── team.css
-│   │   │   └── variables.css
-│   │   │   └── efeitos.css
-│   │   └── global.css
-│   ├── js/
-│   │   └── contact.js
-│   │   └── register.js
-│   ├── pages/
-│   │   ├── contact.html
-│   │   ├── history.html
-│   │   ├── products.html
-│   │   └── team.html
-│   └── index.html
-├── LICENSE
-└── README.md
-```
-### Estilo do site
-Para estilizar o site, nós usamos os estilos globais dentro de variables.css e aplicamos no main.css, veja abaixo as variáveis usadas para o projeto:
+### validaentrada.js
 
-#### Variáveis Globais (Cores e Fontes)
+Nesse arquivo foi implementado funções para verificar o valor informado que o usuário passa para o prompt, analisando possíveis erros de digitação e sempre avisando ao usuário que foi preenchido de maneira errada se for o caso, além de repetir até chegar ao valor correto(coisa que não tinha antes no projeto). Além de uma função pra classificar o vinho de acordo com a safra.
 
-```css
-=======
-css
-:root {
-    --color-primary: #1C1D21;
-    --color-secondary: #F7F4EF;
-    --color-tertiary: #F85036;
-    --color-transparent: #ffffffc1;
+### register.js
 
-    --fonte-titulo: 'Cinzel', serif;
-    --fonte-texto: 'Montserrat', sans-serif;
-}
-
-```
-
-Com isso, qualquer página do projeto já vem com o estilo pré-definido, para situações mais específicas como definições de main, div, span, etc. Nós usamos os arquivos dentro da pasta local.
-
-### Header e Footer
-Semelhante aos estilos específicos, header e footer são usados a partir de arquivos css únicos, ambas seções estilizadas na pasta sections.
-
-### Importância do global.css
-Como dito anteriormente, as páginas html precisam importar diversos arquivos css para funcionar corretamente, para organizar a importação no arquivo html, usamos o global.css que funciona como um processamento de todas os arquivos css, unificando tudo em um único arquivo, precisando importar um único arquivo ao invés de 5 por exemplo.
-
-### Páginas HTML
-
-#### index.html
-Nessa tela é onde o cliente tem a sua primeira impressão da vinharia, por isso foi pensado com mais cuidado pra incentivar o cliente a navegar para as páginas seguintes, contendo um hero chamativo para ver os produtos e contato da vinharia. Mais abaixo com uma apresentação dos melhores produtos com uma breve descrição. Na sequência uma div onde comenta sobre as principais características da vinharia, além de um vídeo informativo sobre como servir um vinho. Por fim, um footer creditando a equipe e com links que levam aos tópicos das outras páginas.
-
-#### products.html
-Nessa tela é onde o cliente tem acesso aos vinhos da vinharia, contendo seu nome e informações junto de uma tabela com informações dos ingredientes dos vinhos.
-
-#### history.html
-Nessa tela é onde o cliente tem acesso a história da vinharia, contando desde a origem da marca, seleção dos vinhos, lista dos vinhos mais vendidos, entre outros.
-
-#### team.html
-Nessa tela é onde o cliente conhece a equipe de programadores do site, com os links do linkedin e github de cada um.
-
-#### contact.html
-Nessa tela é onde o cliente acessa o formulário da vinharia, com informações da vinharia como telefone, email, endereço, entre outras informações. Além disso tem um formulário com inputs a serem preenchidos e um textarea pra mensagem que o cliente quer fazer com a vinharia.
-
-#### register.html
-Nessa tela é onde o cliente consegue registrar um vinho preenchendo informações como nome do vinho, tipo, safra e quantidade de estoque. Todas essas informações são registradas no console.log da página, e o usuário é notificado sobre o registro através de um alert.
-
-### Efeitos CSS
-
-#### efeito.css
-É o arquivo que contém todas as estilizações para o CP2 de Front-End, sendo importada no global.css, visto que o style.css é usado apenas para a estilização do index.html, além de que o global.css já faz essa função de importar os estilos CSS em um só arquivo.
-
-#### Pseudo-classes utilizadas:
-:focus(usado para o header e footer de todas as telas)
-:hover(usado para a grande maioria dos links/botões do site)
-:nth-child(usado para os dois botões do hero do index.html, além deles usarem hover também)
-#### Pseudo-elementos utilizados:
-::selection(usado para o formulário)
-::before(usado para o formulário)
-#### @keyframes utilizados:
-FadeInUp(Usado para as imagens dos vinhos, além dos textos do history.html)
-
-#### uso de flexbox:
-Usado nas seguintes telas:
-index.html
-team.html
-contact.html
-
-## Link do site
-Veja o projeto funcionando aqui: [[link](https://luansmf.github.io/CP1-FrontEnd-VinhariaAgnelo/)]
+register.js é o arquivo principal da funcionalidade do cadastro, importando as funções do validaentrada.js, além de ter funções como verificar qual é o vinho com a safra mais antiga com os que o usuário cadastrou, verificar se o estoque tá baixo(menor que 5), registrar as informações no console.log após o cadastro do vinho. Ao final da execução, é mostrado todas as informações pedidas no requisitos.
 
 ## Equipe de programadores
 ### João Pedro Nóbrega Pereira
-[Git Hub](https://github.com/nobrejohnn)<br>
-[Linkedin](https://www.linkedin.com/in/jo%C3%A3o-pedro-n%C3%B3brega-8aba55293/)
-### Kevin Simões de Souza Lima
-[Git Hub](https://github.com/kevin-simoes)<br>
-[Linkedin](https://www.linkedin.com/in/kevin-sim%C3%B5es-362750350/)
-### Luan Sá Muniz dos Santos de Freitas
-[Git Hub](https://github.com/LuanSMF)<br>
-[Linkedin](https://www.linkedin.com/in/luans%C3%A1muniz/)
+<ul>
+  <li>
+    <strong>João Pedro Nóbrega Pereira</strong> — RM: 570322
+  </li>
 
-### Autor do Texto
-## Kevin Simões
+  <li>
+    <strong>Kevin Simões de Souza Lima</strong> — RM: 571942
+  </li>
+
+  <li>
+    <strong>Luan Sá Muniz dos Santos</strong> — RM: 569136
+  </li>
+</ul>
+
+## Link do GitHub Pages
+[Link do projeto](https://kevin-simoes.github.io/vinheria-agnello-checkpoint02/)
