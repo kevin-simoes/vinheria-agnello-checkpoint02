@@ -1,3 +1,11 @@
+import {
+    validarNome,
+    validarTipo,
+    validarAno,
+    validarQuantidade,
+    classificarVinho
+} from './validaentrada.js';
+
 document.addEventListener("DOMContentLoaded", () => {
 
   const botao = document.getElementById("btnCadastro");
@@ -13,16 +21,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
     Cadastro();
 
-    function perguntar(mensagem) {
+    function perguntar(mensagem,funcaoValidacao = null, mensagemErro = "Entrada inválida.") {
+      while(true){
+        const resposta = prompt(mensagem);
 
-      const resposta = prompt(mensagem);
+        if (resposta === null) {
+          alert("Cadastro cancelado.");
+          return null;
+        }
 
-      if (resposta === null) {
-        alert("Cadastro cancelado.");
-        return null;
+        if(funcaoValidacao == null || funcaoValidacao(resposta)){
+          return resposta;
+        }
+
+        alert(mensagemErro);
       }
-
-      return resposta;
     }    
 
     function antigos(ano,nome){
@@ -30,7 +43,8 @@ document.addEventListener("DOMContentLoaded", () => {
         antigo=ano;
         nomeantigo=nome;
       }
-      console.log("O Vinho mais antigo é o :",nomeantigo);
+      console.log("O Vinho mais antigo é o:",nomeantigo);
+      return nomeantigo;
     }
     
     function verificarEstoque(quantidade) {
@@ -47,57 +61,48 @@ document.addEventListener("DOMContentLoaded", () => {
 
     }
 
-    function perguntarQuantidade() {
-
-      let quantidade;
-
-      while (true) {
-
-        quantidade = perguntar("Digite a quantidade em estoque:");
-
-        if (quantidade === null) {
-          return null;
-        }
-
-        quantidade = Number(quantidade);
-
-        if (!isNaN(quantidade)) {
-          return quantidade;
-        }
-
-        alert("Digite apenas números!");
-
-      }
-
-    }    
+    function mostrarDados(nome,tipo,ano,quantidade,classificacao){
+        alert("Vinho cadastrado com sucesso!");
+        console.log("--- Dados do Vinho ---");
+        console.log("Nome:", nome);
+        console.log("Tipo:", tipo);
+        console.log("Ano:", ano);
+        console.log("Quantidade:", quantidade);
+        console.log("Classificação:", classificacao);
+    }
+  
     function Cadastro(){
       while (continuar) {
+
+        const nome = perguntar("Digite o nome do vinho:",validarNome,"Nome inválido. Não digite números.");
+        if (nome === null) return;
+
+        const tipo = perguntar("Digite o tipo do vinho (Tinto, Branco, Rosé):",validarTipo,"Digitar apenas Tinto, Branco ou Rosé.");
+        if (tipo === null) return;
+
+        const ano = perguntar("Digite o ano da safra:",validarAno,"Digite um ano válido.");
+        if (ano === null) return;
+
+        const quantidade = perguntar("Digite a quantidade em estoque:",validarQuantidade,"Digite uma quantidade válida.");
+        if (quantidade === null) return;
+        const anoNumero = Number(ano);
+        const quantidadeNumero = Number(quantidade);
+        const classificacao = classificarVinho(anoNumero);
 
         qtdcadastros++;
         console.log("Quantidade de Cadastros:",qtdcadastros);
 
-        const nome = perguntar("Digite o nome do vinho:");
-        if (nome === null) return;
+        antigos(anoNumero,nome);
+        verificarEstoque(quantidadeNumero);
 
-        const tipo = perguntar("Digite o tipo do vinho (Tinto, Branco, Rosé):");
-        if (tipo === null) return;
-
-        const ano = perguntar("Digite o ano da safra:");
-        antigos(ano,nome);
-        if (ano === null) return;
-
-        const quantidade = perguntarQuantidade();
-        if (quantidade === null) return;
-
-        verificarEstoque(quantidade);
-
-        console.log("Nome:", nome);
-        console.log("Tipo:", tipo);
-        console.log("Ano:", ano);
+        mostrarDados(nome, tipo, anoNumero, quantidadeNumero, classificacao);
       
         continuar = confirm("Deseja cadastrar outro vinho?");
       }
-      alert("Cadastros finalizados!");
+      alert("Cadastro finalizado!");
+      alert("Numero de Cadastros:"+ qtdcadastros);
+      alert("Quantidade de Vinhos com estoque baixo:"+estoquebaixo);
+      alert("O Vinho com a safra mais antiga é:"+ nomeantigo);
     }
     
   });
