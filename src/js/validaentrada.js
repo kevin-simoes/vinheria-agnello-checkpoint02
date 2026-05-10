@@ -11,9 +11,9 @@ export function validarNome(nome) {
 export function validarTipo(tipo) {
 
     return (
-        tipo === "Tinto" ||
-        tipo === "Branco" ||
-        tipo === "Rosé"
+        tipo.toLowerCase() === "tinto" ||
+        tipo.toLowerCase() === "branco" ||
+        tipo.toLowerCase() === "rosé"
     );
 
 }
